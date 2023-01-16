@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { text } from 'stream/consumers';
 
 export default function First() {
   useEffect(() => {
@@ -31,12 +32,18 @@ export default function First() {
       }
     }
   }, []);
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline bg-slate-600 text-lime-300 roongz">
-        First TS!{' '}
-      </h1>
+      <div className="grid grid-cols-2 gap-6 mb-10">
+        <div className="text-[19px] bg-[#4267B2] shadow-sm bg-white rounded-lg">
+          shadow-sm
+        </div>
+        <div className="shadow bg-white rounded-lg">shadow</div>
+        <div className="shadow-md bg-white rounded-lg">shadow-md</div>
+        <div className="shadow-lg bg-white rounded-lg">shadow-lg</div>
+        <div className="shadow-xl bg-white rounded-lg">shadow-xl</div>
+        <div className="shadow-2xl bg-white rounded-lg">shadow-2xl</div>
+      </div>
     </>
   );
 }
