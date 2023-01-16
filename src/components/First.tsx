@@ -34,7 +34,9 @@ export default function First() {
 
   return (
     <>
-      <div>TS First Step</div>
+      <h1 className="text-3xl font-bold underline bg-slate-600 text-lime-300 roongz">
+        First TS!{' '}
+      </h1>
     </>
   );
 }
